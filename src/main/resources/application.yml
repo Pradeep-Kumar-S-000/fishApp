@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: fishApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/fishapp
+    username: root
+    password: Mengi@213
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
