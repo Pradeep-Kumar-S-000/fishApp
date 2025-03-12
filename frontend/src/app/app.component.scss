@@ -1,0 +1,107 @@
+.app-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    height: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    column-gap: 2rem;
+    margin-right: 1rem;
+}
+
+.nav-link {
+    color: white;
+    transition: color 0.5s;
+    &:hover {
+        cursor: pointer;
+        color: yellow;
+    }
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // align-items: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXxRqliOakHCkdt9QK-np5jF_8UXDeZn-16c0pSS-41XSlpQ-Ogh492lUTj1_u1MH42g0&usqp=CAUhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXxRqliOakHCkdt9QK-np5jF_8UXDeZn-16c0pSS-41XSlpQ-Ogh492lUTj1_u1MH42g0&usqp=CAU');
+
+}
+
+.logo {
+    width: 10rem;
+}
+
+.logo-with-name {
+    align-items: center;;
+    // background-color: rgb(167, 214, 254);
+}
+
+.welcome {
+    color: white;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+#home-section {
+    margin-top: 2rem;
+    display: flex;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #0000FF, #00ffea);
+    background-size: 200% 100%; /* Makes the gradient larger than the text */
+    -webkit-background-clip: text;
+    color: transparent; /* Make the text itself transparent */
+    
+    /* Animation */
+    animation: gradient-animation 3s infinite linear; /* 3s duration, infinite loop, linear timing */
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 0%; /* Start from the left */
+    }
+    50% {
+      background-position: 100% 0%; /* Move to the right */
+    }
+    100% {
+      background-position: 0% 0%; /* Return back to the left */
+    }
+}
+
+.tagline-separator {
+    background-color: black;
+    width: 0.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#stocks-available {
+    text-align: center;
+    margin-top: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+

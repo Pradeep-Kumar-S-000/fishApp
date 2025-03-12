@@ -1,7 +1,23 @@
-<p>item works!</p>
 <button (click)="addItem()">ADD</button>
 
-<p>{{displayItemName}}</p>
-<p>{{displayStockAvailable}}</p>
-<p>{{displayListPrice}}</p>
-<p>{{displayDiscount}}</p>
+
+<br>
+<br>
+<p>List of items</p>
+<table>
+    <tr>
+        <th>Item Name</th>
+        <th>Stock Available</th>
+        <th>List price</th>
+        <th>Discount</th>
+    </tr>
+    @for(item of itemList; track item) {
+        <tr>
+            <td>{{ item.itemName }}</td>
+            <td>{{ item.stockAvailable }}</td>
+            <td>{{ item.listPrice }}</td>
+            <td>{{ item.discount }}</td>
+        </tr>
+    }
+</table>
+
